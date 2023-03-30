@@ -1,0 +1,154 @@
+/* For my personal image */
+#my-img { 
+  border-radius: 50%;
+  max-width:90%; 
+  height:auto;
+}
+
+*{scroll-behavior: smooth;}
+
+/* Fixes overflow */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.lists {
+  list-style: none;
+}
+
+.img-with-text {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+/* note that for border, its 2px, solid, color */
+.download-resume {
+  border: 3px outset whitesmoke;
+  border-radius: 8%;
+}
+
+/* For image resizing. Note that max-width means to conform to the div not the original image size. */
+.img-resizer {
+  border-radius: 50%;
+  text-align: left;
+  max-width:100%; 
+  height:auto;
+}
+
+.img-resizer-2 {
+  border-radius: 10%;
+  text-align: left;
+  max-width:100%; 
+  height:auto;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+.custom-fa-size { 
+  transform: scale(1.5, 1.5); 
+}
+
+.nav-padding {
+  padding-right: 10px; 
+  padding-left: 10px;
+}
+
+.full-screen-height {
+  height: 100vh;
+  width: 100vw;
+}
+
+.line-z-index {
+  z-index: 0;
+}
+
+/* FONTS */
+
+.roberto-font {
+  font-family: 'Roboto', sans-serif;
+}
+
+.montserrat-font {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.inter-font {
+  font-family: 'Inter', sans-serif;
+}
+
+.poppins-font {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* For scroll snapping */
+.scroll-container {
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  width: 100vw;
+}
+
+.scroll-area {
+  scroll-snap-align: start;
+  height: 100vh;
+  width: 100vw;
+}
+
+.icon-circle {
+  display: inline-block;
+  border-radius: 60px;
+  box-shadow: 0 0 2px #888;
+  padding: 0.5em 0.6em;
+
+}
+
+.scroll-area2 {
+  scroll-snap-align: start;  
+}
+
+
+/* For anchor linking */
+#home {}
+#about {}
+#projects {}
+#contact {}
+
+
+/* For seeing more. It works */
+#extra-projects {
+  display: none;
+}
+
+#my-btn-more {
+  display: inline;
+}
+
+#more-div {
+  display: inline;
+}
+
+#my-btn-less {
+  display: none;
+}
+
+
+#less-div {
+  display: none;
+}
+
+
+/* Finger Pointer */
+.link-click {
+  cursor: pointer;
+}
