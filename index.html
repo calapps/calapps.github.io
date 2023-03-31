@@ -44,62 +44,66 @@
 </script>
 
 
+
+
+    
+
 <!-- Scroll Container Div -->
 <!-- For day mode, I just want an off white -->
 
-<div class="scroll-container" style="overflow-x: hidden; background-color: #f5f5f5;"> 
+<div class="scroll-container background-general-color" style="overflow-x: hidden; background-color: #f5f5f5"> 
 
 <!-- Scroll Area 1: Home-->
 	<div class="scroll-area">
 
-    <!--DASHBOARD NAVBAR-->
-    <div id="home">
-		<nav class="navbar navbar-expand-lg bg-body-tertiary"  style="position: fixed; top: 0;  width: 100%; z-index: 1;">
+	<!--DASHBOARD NAVBAR-->
+	    <div id="home">
+			<nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark"  style="position: fixed; top: 0;  width: 100%; height: 6%; z-index: 1;">
 
-			<!-- THIS DIV CLASS RIGHT BELOW ME IS WHERE YOU CAN CHANGE THE NAVBAR COLOR BTW -->
-		  <div class="container-fluid">
-		    <a class="navbar-brand collapse navbar-collapse roberto-font" style="font-size: 1.5em;">Calvin Pham</a>
-		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		      <span class="navbar-toggler-icon"></span>
-		    </button>
-		    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-		      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+				<!-- THIS DIV CLASS RIGHT BELOW ME IS WHERE YOU CAN CHANGE THE NAVBAR COLOR BTW -->
+			  <div class="container-fluid background-header-bar-color" style="color: white;">
+			    <a class="navbar-brand collapse navbar-collapse roberto-font" style="font-size: 1.5em;"><span class="my-text-hr-color" style="color:black">Calvin Pham </span></a>
+			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			      <span class="navbar-toggler-icon"></span>
+			    </button>
+			    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
-		      	<li class="nav-item nav-padding">
-		          <a class="nav-link active roberto-font link-click" aria-current="page" href="#home" style="font-size: 1.5em;">Home</a>
-		        </li>
+			      	<li class="nav-item nav-padding">
+			          <a class="nav-link active roberto-font link-click" aria-current="page" href="#home" style="font-size: 1.5em;"><span class="my-text-hr-color" style="color:black">Home</span></a>
+			        </li>
 
-		        <li class="nav-item nav-padding">
-		          <a class="nav-link active roberto-font link-click" aria-current="page" href="#about" style="font-size: 1.5em;">About</a>
-		        </li>
+			        <li class="nav-item nav-padding">
+			          <a class="nav-link active roberto-font link-click" aria-current="page" href="#about" style="font-size: 1.5em;"><span class="my-text-hr-color" style="color:black">About</span></a>
+			        </li>
 
-		        <li class="nav-item nav-padding">
-		          <a class="nav-link active roberto-font link-click" aria-current="page" href="#projects" style="font-size: 1.5em;">Projects</a>
-		        </li>
+			        <li class="nav-item nav-padding">
+			          <a class="nav-link active roberto-font link-click" aria-current="page" href="#projects" style="font-size: 1.5em;"><span class="my-text-hr-color" style="color:black">Projects</span></a>
+			        </li>
 
-		        <li class="nav-item nav-padding">
-		          <a class="nav-link active roberto-font link-click" aria-current="page" href="#contact" style="font-size: 1.5em;">Contact</a>
-		        </li>
+			        <li class="nav-item nav-padding">
+			          <a class="nav-link active roberto-font link-click" aria-current="page" href="#contact" style="font-size: 1.5em;"><span class="my-text-hr-color" style="color:black">Contact</span></a>
+			        </li>
 
-		        <li class="nav-item" style="padding-right: 30px; padding-left: 20px;">
-		          <a class="nav-link link-click nav-padding" href="#">
-		          	<!-- DO LIGHT AND DARK MODE HERE -->
-								<i class="fa fa-sun-o icon-circle custom-fa-size"  aria-hidden="true" style="color:white; background-color: goldenrod;"></i>
-								<i class="fa fa-moon-o icon-circle custom-fa-size" aria-hidden="true" style="color:white; background-color: black;"></i>
-		          </a>
-		        </li>
+			        <li class="nav-item" style="padding-right: 30px; padding-left: 20px; padding-top: 5px; padding-bottom: 5px;">
+			          <a class="nav-link link-click nav-padding" href="#">
+			          	<!-- DO LIGHT AND DARK MODE HERE -->
+									<i class="fa fa-sun-o icon-circle custom-fa-size" id="sun-button"  aria-hidden="true" style="color:white; background-color: goldenrod;"></i>
+									<i class="fa fa-moon-o icon-circle custom-fa-size" id="moon-button" aria-hidden="true" style="color:white; background-color: midnightblue;"></i>
+			          </a>
+			        </li>
 
-		        <li class="nav-item img-with-text download-resume nav-padding">
-		          <a class="nav-link roberto-font link-click" href="assets/Calvin-Resume.pdf" style="font-size: 1.5em; padding-right: 20px; padding-left: 20px; color:cornflowerblue;"
-		           target="_blank" download><b>Resume</b></a>
-		        </li>
+			        <li class="nav-item img-with-text download-resume nav-padding">
+			          <a class="nav-link roberto-font link-click" href="assets/Calvin-Resume.pdf" style="font-size: 1.5em; padding-right: 20px; padding-left: 20px; color: red;"
+			           target="_blank" download><b>Resume</b></a>
+			        </li>
 
-		      </ul>
-		      
-		    </div>
-		  </div>
-		</nav>
-	</div>
+			      </ul>
+			      
+			    </div>
+			  </div>
+			</nav>
+		</div>
 
 
     <!-- HOME PAGE WITH ME AND A GITHUB AND LINKEDIN ICON  -->
@@ -107,20 +111,22 @@
 		<div class="container-fluid full-screen-height" style="overflow: auto; display:flex;align-items:center">
 
 			<div class="row">
+			<div class="col-sm-1">
+			</div>
 			<div class="col-sm-2">
-				<br><br><br><br><br>
+				<br><br><br>
 
 				<ul>
 					<br>
 			  		<ol class="lists">
 			  			<a style="text-decoration:none;" href="https://www.linkedin.com/in/calvin-pham-921333177/" target="_blank">
-			  				<i class="fa fa-linkedin custom-fa-size-2 link-click icon-circle" aria-hidden="true" style="color: black;"></i>
+			  				<i class="fa fa-linkedin fa-3x link-click icon-circle my-text-hr-color" style="color:black" aria-hidden="true"></i>
 			  			</a>
 			  		</ol>
 			  		<br><br><br><br>
 			  		<ol class="lists">
 			  			<a style="text-decoration:none;" href="https://github.com/calapps" target="_blank">
-			  				<i class="fa fa-github custom-fa-size-2 link-click icon-circle" aria-hidden="true" style="color: black;"></i>
+			  				<i class="fa fa-github fa-3x link-click icon-circle my-text-hr-color" style="color:black" aria-hidden="true"></i>
 			  			</a>
 			  		</ol>
 			  	</ul>
@@ -131,19 +137,19 @@
 			  </div>
 			<div class="col-sm-1">
 			</div>
-			  <div class="col-sm-6">
+			  <div class="col-sm-5">
 			  	<br><br>
 
 			  	<!-- This is the home intro text -->
-			  	<h1 class="poppins-font" style="text-align: left; font-size: 4em;"> 
+			  	<h1 class="poppins-font my-text-hr-color" style="color:black; text-align: left; font-size: 4em;"> 
 			  		<b>Hi, I'm Calvin</b> 
 			  	</h1>
 
-			  	<h4 class="montserrat-font" style="text-align: left; font-size: 2.25em;"> 
+			  	<h4 class="montserrat-font my-text-hr-color" style="color:black;text-align: left; font-size: 2.25em;"> 
 			  			Software Engineer
 			  	</h4>
 
-			  	<h2 class="poppins-font" style="text-align: left; font-size: 3em;"> 
+			  	<h2 class="poppins-font my-text-hr-color" style="color:black; text-align: left; font-size: 3em;"> 
 			  			It's nice to meet you! 
 			  	</h2>
 			  	
@@ -151,6 +157,7 @@
 
 
 			</div>
+
 		</div>
 	</header>
 
@@ -173,12 +180,12 @@
 		  <div class="col-sm-12">
 
 		  	<!-- This is the about me text -->
-		  	<hr class="line-z-index">
-		  	<h1 style="text-align: center; font-size: 3.5em;" class="poppins-font">
+		  	<hr class="line-z-index my-text-hr-color" style="color:black">
+		  	<h1 style="color:black; text-align: center; font-size: 3.5em;" class="poppins-font color-white my-text-hr-color">
 		  	 About Me 
 		  	</h1>
-		  	<hr class="line-z-index"> 
-		  	<p style="font-size: 1.15em;" class="poppins-font"> 
+		  	<hr class="line-z-index my-text-hr-color" style="color:black"> 
+		  	<p style="color:black; font-size: 1.4em;" class="poppins-font color-white my-text-hr-color"> 
 							Hello there! I'm a <b>software engineer</b>, a <b>thinker</b>, and someone with an insatiable appetite for <b>learning new things</b>!
 							<br><br>
 							I received my <b>B.A. in Computer Science at the University of California, Berkeley</b>, and I am interested in a wide range of fields, including <b>cryptography</b>, <b>computer graphics</b>, <b>UI/UX design</b>, and <b>operating systems</b>, to name a few. 
@@ -191,7 +198,7 @@
 
 
 							<a style="text-decoration:none;" href="mailto:pqcalvin@gmail.com" target="_blank"> 
-						  <span class="roberto-font" style="color:black">
+						  <span class="roberto-font my-text-hr-color" style="color:black;">
 						  <b><em>pqcalvin@gmail.com</em></b>
 						  </span>
 						  </a>
@@ -199,7 +206,7 @@
 							, or through my 
 
 							<a style="text-decoration:none;" href="assets/Calvin-Resume.pdf" class="link-click" target="_blank"  download> 
-								<span class="roberto-font" style="color:black"> 
+								<span class="roberto-font my-text-hr-color" style="color:black;"> 
 									<b><em>LinkedIn</em></b> 
 								</span>
 							</a>. 
@@ -223,13 +230,13 @@
 <br><br><br>
 
 	<div class="container">
-		<hr class="line-z-index">
+		<hr class="line-z-index my-text-hr-color" style="color:black">
 		<div class="row">
 		  <div class="col-sm-12">
-		  	<h1 style="text-align: center; font-size: 3.5em;" class="poppins-font"> Projects </h1>
+		  	<h1 style="color:black; text-align: center; font-size: 3.5em;" class="poppins-font color-white my-text-hr-color"> Projects </h1>
 		  </div>
 		</div>
-		<hr class="line-z-index">
+		<hr class="line-z-index my-text-hr-color" style="color:black">
 	</div>
 <br>
 
@@ -237,13 +244,13 @@
 	<div class="container">
 		<div class="row">
 		  <div class="col-sm-4">
-		  	<img src="assets/wave-1.gif" class="img-resizer-2" alt="Water Simulation"/>
+		  	<img src="assets/wave.gif" class="img-resizer-2" alt="Water Simulation"/>
 		  </div>
 		  <div class="col-sm-8">
-		  	<h4 style="text-align: center; font-size: 2em;" class="roberto-font"> Fluid Dynamics Particle Simulator </h4>
+		  	<h4 style="color:black; text-align: center; font-size: 2em;" class="roberto-font my-text-hr-color"> Fluid Dynamics Particle Simulator </h4>
 		  	<br>
 
-			<ul style="text-align: left;" class="poppins-font">
+			<ul style="text-align: left; color:black" class="poppins-font my-text-hr-color">
 
 				<li style="list-style-type: disc; font-size: 1.05em;"> This is a 
 					<b>realistic CGI water simulator</b>
@@ -252,7 +259,8 @@
 					 in order to mimic how water moves in real life. 
 				</li>
 
-				<br>
+				<br><br>
+
 				<li style="list-style-type: disc; font-size: 1.05em;"> Through <b>multi-threading</b> and 
 					<b>hashing</b>, <b>calculating</b> the <b>interaction</b> of the <b>tens of thousands of particles</b> under the rules of fluid dynamics, as well as 
 					<b>graphics rendering</b>, via the marching cubes algorithm, was <b>fast</b>.
@@ -264,7 +272,7 @@
 		  </div>
 		</div>
 		<br>
-		<hr class="line-z-index">
+		<hr class="line-z-index my-text-hr-color" style="color:black">
 	</div>
 		<br> 
 
@@ -272,20 +280,20 @@
 	<div class="container">
 		<div class="row">
 		  <div class="col-sm-4">
-		  	<img src="assets/crypto-2.png" class="img-resizer-2" alt="Crypto File"/>	
+		  	<img src="assets/crypto.png" class="img-resizer-2" alt="Crypto File"/>	
 		  </div>
 
 		  <div class="col-sm-8">
-			  <h4 style="text-align: center; font-size: 2em;" class="roberto-font"> Cryptographic File Sharing System </h4>
+			  <h4 style="color:black; text-align: center; font-size: 2em;" class="roberto-font my-text-hr-color"> Cryptographic File Sharing System </h4>
 			  <br>
 
 
-			<ul style="text-align: left;" class="poppins-font">
+			<ul style="color:black; text-align: left;" class="poppins-font my-text-hr-color">
 
 				<li style="list-style-type: disc; font-size: 1.05em;"> This is a <b>multi-user</b>, <b>safe</b> and <b>secure</b> <b>file sharing</b> and <b>storage system</b> that utilizes many <b>cryptographic tools</b> including <b>public</b> and <b>private key encryption</b>, HMAC, AES-CTR block chaining, SHA-512 <b>hashing</b>, and symmetric encryption.
 				</li>
 
-				<br>
+				<br><br>
 
 				<li style="list-style-type: disc; font-size: 1.05em;"> Through the utilization of a transient data <b>design philosophy</b>, exlcuding a key and data store, the <b>confidentiality</b>, <b>integrity</b>, and <b>authenticity</b> of <b>user data</b> and <b>files</b>.
 				</li>
@@ -297,7 +305,7 @@
 		  </div>
 		</div>
 		<br>
-		<hr class="line-z-index">
+		<hr class="line-z-index my-text-hr-color" style="color:black">
 	</div>
 <br>
 
@@ -306,18 +314,18 @@
 	<div class="container">
 		<div class="row">
 		  <div class="col-sm-4">
-		  	<img src="assets/pintos-logo.png" class="img-resizer" alt="Pintos OS"/>	
+		  	<img src="assets/pintos.png" class="img-resizer" alt="Pintos OS"/>	
 		  </div>
 		  <div class="col-sm-8">
-		  	<h4 style="text-align: center; font-size: 2em;" class="roberto-font"> Pintos Operating System </h4>
+		  	<h4 style="color: black; text-align: center; font-size: 2em;" class="roberto-font my-text-hr-color"> Pintos Operating System </h4>
 			  <br>
 
-			<ul style="text-align: left;" class="poppins-font">
+			<ul style="color:black; text-align: left;" class="poppins-font my-text-hr-color">
 
 				<li style="list-style-type: disc; font-size: 1.05em;"> This is an <b>operating system</b> that I designed and implemented various <b>enhancements</b> on, including <b>user program execution</b>, <b>system calls</b>, and <b>thread management</b>.
 				</li>
 
-				<br>
+				<br><br>
 
 				<li style="list-style-type: disc; font-size: 1.05em;"> Two specific things I implemented were: a <b>priority donation algorithm</b> for <b>multi-thread synchronization functionality</b> to allow for multiple threads to simaltaneously use locks, semaphores, and condition variables for atomic actions. As well as a least recently used <b>buffer cache</b> for an i-node based file system for a <b>faster runtime speed</b>.
 				</li>
@@ -329,7 +337,7 @@
 		  </div>
 		</div>
 		<br>
-		<hr class="line-z-index">
+		<hr class="line-z-index my-text-hr-color" style="color:black">
 	</div>
 <br>
 
@@ -338,20 +346,20 @@
 	<div class="container">
 		<div class="row">
 		  <div class="col-sm-4">
-		  	<img src="assets/gitlet-4.png" class="img-resizer" alt="Gitlet"/>	
+		  	<img src="assets/gitlet.png" class="img-resizer" alt="Gitlet"/>	
 
 		  </div>
 		  <div class="col-sm-8">
-		  	<h4 style="text-align: center; font-size: 2em;" class="roberto-font"> Gitlet </h4>
+		  	<h4 style="color:black; text-align: center; font-size: 2em;" class="roberto-font my-text-hr-color"> Gitlet </h4>
 			  <br>
 
 
-			<ul style="text-align: left;" class="poppins-font">
+			<ul style="color:black; text-align: left;" class="poppins-font my-text-hr-color">
 
 				<li style="list-style-type: disc; font-size: 1.05em;"> This is a fully functioning local <b>file version control system</b> that mimics some of the main functions of <b>Git</b> including <b>branching, commiting, checking out, logging, resetting, and merging</b>.
 				</li>
 
-				<br>
+				<br><br>
 
 				<li style="list-style-type: disc; font-size: 1.05em;"> This was the first project I did where I was really challenged and this led me to
   			cementing the importance of a well thought out <b>design</b> and good <b>coding habits</b>.
@@ -364,7 +372,7 @@
 		  </div>
 		</div>
 		<br>
-		<hr class="line-z-index">
+		<hr class="line-z-index my-text-hr-color" style="color:black">
 	</div>
 
 
@@ -376,7 +384,7 @@
 		<div class="row">
 			<div class="col-sm-6"> </div>
 			  <div class="col-sm-1 link-click">
-			  	<i class="fa fa-caret-down fa-5x" style="text-align: center;" id="more-div" aria-hidden="true"></i>
+			  	<i class="fa fa-caret-down fa-5x my-text-hr-color" style="color:black; text-align: center;" id="more-div" aria-hidden="true"></i>
 			  </div>
 			<div class="col-sm-5"> </div>
 		</div>
@@ -393,21 +401,21 @@
 		<br>
 		<div class="row">
 		  <div class="col-sm-4">
-		  	<img src="assets/database-1.png" class="img-resizer-2" alt="Database"/>	
+		  	<img src="assets/database.png" class="img-resizer-2" alt="Database"/>	
 
 		  </div>
 		  <div class="col-sm-8">
-		  	<h4 style="text-align: center; font-size: 2em;" class="roberto-font"> RookieDB </h4>
+		  	<h4 style="color : black; text-align: center; font-size: 2em;" class="roberto-font my-text-hr-color"> RookieDB </h4>
 		  		<br>
 		  		
 
 
-			<ul style="text-align: left;" class="poppins-font">
+			<ul style="color:black; text-align: left;" class="poppins-font my-text-hr-color">
 
 				<li style="list-style-type: disc; font-size: 1.05em;"> This is a <b>database</b> where I designed and developed many <b>diverse functionalities</b> for, including <b>B+ tree indicies</b> for <b>faster</b> database <b>storage access</b>, efficient join algorithms, query optimizations, a complex multi-granularity <b>locking system</b> for the <b>concurrent execution</b> of transactions, and <b>database recovery</b> through logging.
 				</li>
 
-				<br>
+				<br><br>
 
 				<li style="list-style-type: disc; font-size: 1.05em;"> For the multi-granularity locking system, I utilized many <b>different lock types</b> on all parts of the database in order to allow for <b>atomic actions</b> and to maintain database <b>consistency</b>, as well as a wait <b>queue</b> for multiple transactions <b>requesting access</b> to currently locked <b>resources</b>. 
 				</li>
@@ -421,7 +429,7 @@
 		  </div>
 		</div>
 		<br>
-		<hr class="line-z-index">
+		<hr class="line-z-index my-text-hr-color" style="color:black">
 	</div>
 		<br>
 
@@ -431,20 +439,20 @@
 		<div class="row">
 
 		  <div class="col-sm-4">
-		  		<img src="assets/go-motivation-1.png" class="img-resizer-2" alt="Pintos OS"/>	
+		  		<img src="assets/go-motivation.png" class="img-resizer-2" alt="Pintos OS"/>	
 		  </div>
 
 		  <div class="col-sm-8">
-		  		<h4 style="text-align: center; font-size: 2em;" class="roberto-font"> Go Motivation </h4>
+		  		<h4 style="color:black; text-align: center; font-size: 2em;" class="roberto-font my-text-hr-color"> Go Motivation </h4>
 		  			<br>
 
 
-			<ul style="text-align: left;" class="poppins-font">
+			<ul style="color:black; text-align: left;" class="poppins-font my-text-hr-color">
 
 				<li style="list-style-type: disc; font-size: 1.05em;"> This is a <b>full stack web app</b> that helps motivate users to accomplish their long term fitness goals through a calendar and achievement system. For <b>API's</b>, we used a <b>calendar API</b>, and <b>information storage API</b> for keeping track of progress.
 				</li>
 
-				<br>
+				<br><br>
 
 				<li style="list-style-type: disc; font-size: 1.05em;"> My team and I utilized the full <b>user interface design development process</b>, including <b>A/B testing</b>, <b>persona crafting</b>, and <b>wireframing</b>, in order to build the app from the ground up for <b>iterative improvements</b> and in order to cater towards a specific <b>focus group</b>.
 				</li>
@@ -458,7 +466,7 @@
 		  </div>
 		</div>
 		<br>
-		<hr class="line-z-index">
+		<hr class="line-z-index my-text-hr-color" style="color:black">
 	</div>
 <br>
 
@@ -468,18 +476,18 @@
 	<div class="container">
 		<div class="row">
 		  <div class="col-sm-4">
-		  	<img src="assets/ilp-1.png" class="img-resizer-2" alt="Database"/>	
+		  	<img src="assets/ilp.png" class="img-resizer-2 color-white" alt="Database"/>	
 
 		  </div>
 		  <div class="col-sm-8">
-		  	<h4 style="text-align: center; font-size: 2em;" class="roberto-font"> Integer Linear Program Room Optimizer </h4>
-
-			<ul style="text-align: left;" class="poppins-font">
+		  	<h4 style="color:black; text-align: center; font-size: 2em;" class="roberto-font my-text-hr-color"> Integer Linear Program Room Optimizer </h4>
+		  	<br>
+			<ul style="color:black; text-align: left;" class="poppins-font my-text-hr-color">
 
 				<li style="list-style-type: disc; font-size: 1.05em;"> This is a <b>NP-complete search problem</b> where my team and I had to find the most optimal sets of people and rooms where certain conditions were met, or in other words, generate the most <b>optimal set of vertex groupings</b> that <b>maximize</b> the sum total <b>edge values</b>, while adhering to an <b>upper bound threshold</b> for the sum total graph traversal edge values.
 				</li>
 
-				<br>
+				<br><br>
 
 				<li style="list-style-type: disc; font-size: 1.05em;"> We utilized <b>integer linear programming</b> to find the <b>optimal set</b> of vertex groupings given 100 or fewer vertices. And <b>placed 10th out of 243 groups</b> in a <b>contest</b> that tested the number of inputs our solver could <b>process</b> given a <b>time limit</b>.
 				</li>
@@ -492,7 +500,7 @@
 		  </div>
 		</div>
 		<br>
-		<hr class="line-z-index">
+		<hr class="line-z-index my-text-hr-color" style="color:black">
 	</div>
 <!-- SEE MORE END -->
 
@@ -505,7 +513,7 @@
 		<div class="row">
 			<div class="col-sm-6"> </div>
 			  <div class="col-sm-1 link-click">
-			  	<i class="fa fa-caret-up fa-5x" style="text-align: center;" id="less-div" aria-hidden="true"></i>
+			  	<i class="fa fa-caret-up fa-5x my-text-hr-color" style="color:black; text-align: center;" id="less-div" aria-hidden="true"></i>
 			  </div>
 			<div class="col-sm-5"> </div>
 		</div>
@@ -519,7 +527,7 @@
 
 <!-- CONTACT ME. MAKE THIS ALL BLACK, LIKE THE END OF EACH PAGE HAS A DARKER COLOR AND CONTACT INFO -->
 
-	<div class="container-fluid" id="contact" style="background-color:black;">
+	<div class="container-fluid my-contact-color" id="contact" style="background-color : #202020;">
 		<div class="row">
 		  <div class="col-sm-12">
 			<br><br>
@@ -608,6 +616,33 @@ $(document).ready(function(){
     $("#less-div").hide();
   });
 });
+
+
+// Click on the sun icon (turns to dark mode)
+$(document).ready(function(){
+  $("#sun-button").click(function(){
+    $(".my-text-hr-color").css("color", "white");
+    $(".background-general-color").css("background-color", "#181818");
+    $(".background-header-bar-color").css("background-color", "#202020");
+    $(".my-contact-color").css("background-color", "#202020");
+
+    $("#sun-button").hide();
+    $("#moon-button").show();
+  });
+});
+
+// Click on the moon icon (turns to light mode)
+$(document).ready(function(){
+  $("#moon-button").click(function(){
+    $(".my-text-hr-color").css("color", "black");
+    $(".background-general-color").css("background-color", "#f5f5f5");
+    $(".background-header-bar-color").css("background-color", "white");
+    $(".my-contact-color").css("background-color", "#202020");
+    $("#moon-button").hide();
+    $("#sun-button").show();
+  });
+});
+
 
 </script>
 

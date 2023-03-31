@@ -5,6 +5,11 @@
   height:auto;
 }
 
+.my-icon-scale {
+  max-width: 50%;
+  height: auto;
+}
+
 *{scroll-behavior: smooth;}
 
 /* Fixes overflow */
@@ -13,7 +18,6 @@
   clear: both;
   display: table;
 }
-
 
 .lists {
   list-style: none;
@@ -156,4 +160,36 @@
 /* Finger Pointer */
 .link-click {
   cursor: pointer;
+}
+
+
+/* NIGHT MODE */
+.background-general-color {}
+.background-header-bar-color {}
+.my-text-hr-color {}
+.my-contact-color {}
+
+/* Light and Dark Mode */
+
+#sun-button {
+  display: inline;
+}
+
+#moon-button {
+  display: none;
+}
+
+
+header {
+  display: flex;
+  gap 8rem;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-side {
+  display: flex;
+  gap: 2rem;
+  align-items:center;
 }
