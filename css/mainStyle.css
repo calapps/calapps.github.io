@@ -29,9 +29,12 @@
 
 /* Download resume button */
 .download-resume {
-  border: 3px outset whitesmoke;
+  border: 3px outset;
   border-radius: 8%;
 }
+
+.my-resume-text-color {}
+
 
 /* For image resizing */
 .img-resizer {
@@ -70,6 +73,8 @@
 .nav-padding {
   padding-right: 10px; 
   padding-left: 10px;
+  padding-top: 50px;
+  padding-bottom: 15px;
 }
 
 /* Full Screen Height */
