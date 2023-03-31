@@ -5,11 +5,7 @@
   height:auto;
 }
 
-.my-icon-scale {
-  max-width: 50%;
-  height: auto;
-}
-
+/* Scrolling behavior */
 *{scroll-behavior: smooth;}
 
 /* Fixes overflow */
@@ -19,23 +15,25 @@
   display: table;
 }
 
+/* Lists modification */
 .lists {
   list-style: none;
 }
 
+/* For img with text */
 .img-with-text {
     text-align: center;
     display: block;
     margin: 0 auto;
 }
 
-/* note that for border, its 2px, solid, color */
+/* Download resume button */
 .download-resume {
   border: 3px outset whitesmoke;
   border-radius: 8%;
 }
 
-/* For image resizing. Note that max-width means to conform to the div not the original image size. */
+/* For image resizing */
 .img-resizer {
   border-radius: 50%;
   text-align: left;
@@ -50,6 +48,7 @@
   height:auto;
 }
 
+/* Alignment */
 .center {
   display: block;
   margin-left: auto;
@@ -57,7 +56,7 @@
   width: 50%;
 }
 
-
+/* Icon sizes */
 .custom-fa-size { 
   transform: scale(1.5, 1.5); 
 }
@@ -67,22 +66,25 @@
 
 }
 
+/* Navigation button padding */
 .nav-padding {
   padding-right: 10px; 
   padding-left: 10px;
 }
 
+/* Full Screen Height */
 .full-screen-height {
   height: 100vh;
   width: 100vw;
 }
 
+/* Z-index */
 .line-z-index {
   z-index: 0;
 }
 
-/* FONTS */
 
+/* FONTS */
 .roberto-font {
   font-family: 'Roboto', sans-serif;
 }
@@ -114,6 +116,12 @@
   width: 100vw;
 }
 
+.scroll-area2 {
+  scroll-snap-align: start;  
+}
+
+
+/* For the circle around icons */
 .icon-circle {
   display: inline-block;
   border-radius: 60px;
@@ -122,11 +130,6 @@
 
 }
 
-.scroll-area2 {
-  scroll-snap-align: start;  
-}
-
-
 /* For anchor linking */
 #home {}
 #about {}
@@ -134,7 +137,7 @@
 #contact {}
 
 
-/* For seeing more. It works */
+/* For seeing more projects */
 #extra-projects {
   display: none;
 }
@@ -157,39 +160,24 @@
 }
 
 
-/* Finger Pointer */
+/* Hover Finger */
 .link-click {
   cursor: pointer;
 }
 
 
-/* NIGHT MODE */
+/* Light and Dark mode classes*/
 .background-general-color {}
 .background-header-bar-color {}
 .my-text-hr-color {}
 .my-contact-color {}
 
-/* Light and Dark Mode */
 
+/* Light and Dark Mode Icons */
 #sun-button {
   display: inline;
 }
 
 #moon-button {
   display: none;
-}
-
-
-header {
-  display: flex;
-  gap 8rem;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-}
-
-.left-side {
-  display: flex;
-  gap: 2rem;
-  align-items:center;
 }
