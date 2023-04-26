@@ -6,4 +6,4 @@ Here I used HTML/CSS/JQuery, and Github pages to create and host the website.
 
 If anyone would like to talk about how I implemented my website, I would love to talk about it.
 
-Email me at pqcalvin@gmail.com if you are an employer or would just want to chat!
+Email me at pqcalvin@gmail.com if you are an employer or if you just want to chat!
