@@ -180,9 +180,9 @@
 
 /* Light and Dark Mode Icons */
 #sun-button {
-  display: inline;
+  display: none;
 }
 
 #moon-button {
-  display: none;
+  display: inline;
 }
