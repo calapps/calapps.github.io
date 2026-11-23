@@ -1,733 +1,265 @@
-<!doctype html> 
-<html lang="en"> 
+<!DOCTYPE html>
 
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Calvin Pham</title>
-
-    <!-- For tiny website icon -->
-    <link rel="icon" type="image/x-icon" href="assets/cursive-C.jpg">
-
-    <!-- For CSS sheets -->
-    <link rel="stylesheet" href="css/reset.css" type="text/css">
-    <link rel="stylesheet" href="css/mainStyle.css" type="text/css">
-
-    <!-- For font awesome icons -->
-    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
-
-    <!-- For the jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-
-    <!-- For bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-
-    <!-- For fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Montserrat&family=Poppins:wght@300&family=Roboto&display=swap" rel="stylesheet">
-
-  </head>
-  
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9747JL7T6H"></script>
+<html data-theme="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#202020" name="theme-color"/>
+<meta content="Calvin Pham is a software engineer with a background in software development, systems programming, production-scale testing, and hardware/software validation. Explore seven projects across operating systems, databases, cryptography, graphics, and web development." name="description"/>
+<title>Calvin Pham | Software Engineer</title>
+<link href="assets/cursive-C.jpg" rel="icon" type="image/jpeg"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;family=Roboto:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    // Apply the saved theme before the page paints to prevent a flash of the wrong color.
+    try {
+      const savedTheme = localStorage.getItem('calapps-theme');
+      if (savedTheme === 'light' || savedTheme === 'dark') {
+        document.documentElement.dataset.theme = savedTheme;
+      }
+    } catch (_) { /* Storage can be disabled in private browsing. */ }
+  </script>
+<link href="css/mainStyle.css" rel="stylesheet"/>
+<script defer="" src="js/main.js"></script>
+<!-- Keep the Google Analytics property from your original source. -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-9747JL7T6H"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-9747JL7T6H');
+  </script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="home">
+<div class="site-header__inner layout-container">
+<a aria-label="Calvin Pham, back to home" class="site-brand" href="#home">Calvin Pham</a>
+<nav aria-label="Primary navigation" class="site-nav" id="site-navigation">
+<a class="site-nav__link" href="#home">Home</a>
+<a class="site-nav__link" href="#about">About</a>
+<a class="site-nav__link" href="#experience">Experience</a>
+<a class="site-nav__link" href="#projects">Projects</a>
+<a class="site-nav__link" href="#contact">Contact</a>
+<a class="resume-button" href="assets/Calvin_Pham_Resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="View Calvin’s résumé PDF (opens in a new tab)">Résumé <span aria-hidden="true">↗</span></a>
 
-  gtag('config', 'G-9747JL7T6H');
-</script>
-
-<body onload="init();">
-
-<!-- JQUERY -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity=
-				"sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous">
-	</script>
-
-
-
-	<!-- Scroll Container Div -->
-	<div class="scroll-container background-general-color" style="overflow-x: hidden; background-color: #181818"> 
-
-	<!-- Scroll Area 1: Home-->
-		<div class="scroll-area">
-
-		<!--DASHBOARD NAVBAR-->
-		    <div id="home">
-				<nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark"  style="position: fixed; top: 0;  width: 100%; height: 6%; z-index: 1;">
-
-					<!-- Div Color Change -->
-				  <div class="container-fluid background-header-bar-color" style="background-color: #202020;">
-				    <a class="navbar-brand collapse navbar-collapse roberto-font" style="font-size: 1.8em;">
-				    	<span class="my-text-hr-color" style="padding-left: 20px; padding-right: 20px; padding-top: 55px; padding-bottom: 15px; color:white">Calvin Pham </span>
-				    </a>
-
-				    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				      <span class="navbar-toggler-icon"></span>
-				    </button>
-
-				    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-				      
-				      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-padding">
-				      	<li class="nav-item" style="padding-left: 20px; padding-right: 20px; padding-top: 8px;">
-				          <a class="nav-link active roberto-font link-click" aria-current="page" href="#home" style="font-size: 1.5em;"><span class="my-text-hr-color" 
-				          	style="color:white">Home</span></a>
-				        </li>
-
-				        <li class="nav-item" style="padding-left: 20px; padding-right: 20px; padding-top: 8px;">
-				          <a class="nav-link active roberto-font link-click" aria-current="page" href="#about" style="font-size: 1.5em;"><span class="my-text-hr-color" 
-				          	style="color:white">About</span></a>
-				        </li>
-
-				        <li class="nav-item" style="padding-left: 20px; padding-right: 20px; padding-top: 8px;">
-				          <a class="nav-link active roberto-font link-click" aria-current="page" href="#projects" style="font-size: 1.5em;">
-				          	<span class="my-text-hr-color" style="color:white">Projects</span></a>
-				        </li>
-
-				        <li class="nav-item" style="padding-left: 20px; padding-right: 10px; padding-top: 8px;">
-				          <a class="nav-link active roberto-font link-click" aria-current="page" href="#contact" style="font-size: 1.5em;">
-				          	<span class="my-text-hr-color" style="color:white">Contact</span></a>
-				        </li>
-
-				        <li class="nav-item" style="padding-left: 20px; padding-right: 35px; padding-top: 12px;">
-				          <a class="nav-link link-click" href="#">
-				          	<!-- Dark and Light mode icons -->
-										<i class="fa fa-sun-o icon-circle fa-lg" id="sun-button"  aria-hidden="true" style="color:white; background-color: black;"></i> 
-										<i class="fa fa-moon-o icon-circle fa-lg" id="moon-button" aria-hidden="true" style="color:black; background-color: white;"></i>
-				          </a>
-				        </li>
-
-				        <li class="nav-item img-with-text download-resume" style="border-color: orange; background-color: black;">
-				          <a class="nav-link roberto-font link-click my-resume-text-color" href="assets/Calvin_Pham_Resume.pdf" 
-				            	style="font-size: 1.5em; padding-right: 20px; padding-left: 20px; color: orangered;"
-				           		target="_blank" download><b>Resume</b>
-				          </a>
-				        </li>
-				      </ul>
-				      
-				    </div>
-				  </div>
-				</nav>
-			</div>
-
-	    <!-- Home Page  -->
-	    <header>
-			<div class="container-fluid full-screen-height" style="overflow: auto; display:flex;align-items:center">
-
-				<div class="row">
-				
-				<div class="col-sm-1">
-				</div>
-<!-- 				<div class="col-sm-2">
-
-					<br><br><br>
-
-					<ul>
-
-						<br>
-
-				  		<ol class="lists">
-				  			<a style="text-decoration:none;" href="https://www.linkedin.com/in/calvin-pham-921333177/" target="_blank">
-				  				<i class="fa fa-linkedin fa-3x link-click icon-circle my-text-hr-color" style="color:black" aria-hidden="true"></i>
-				  			</a>
-				  		</ol>
-
-				  		<br><br><br><br>
-
-				  		<ol class="lists">
-				  			<a style="text-decoration:none;" href="https://github.com/calapps" target="_blank">
-				  				<i class="fa fa-github fa-3x link-click icon-circle my-text-hr-color" style="color:black" aria-hidden="true"></i>
-				  			</a>
-				  		</ol>
-
-				  	</ul>
-
-				</div> -->
-
-				  <div class="col-sm-3 img-with-text">
-				  	<img src="assets/mypic.jpg" class="img-responsive" id = "my-img" alt="Calvin Pham"/>
-				  </div>
-
-<!-- 				<div class="col-sm-1">
-				</div> -->
-
-				  <div class="col-sm-7">
-
-				  	<br><br><br>
-
-				  	<!-- Home Intro Text -->
-				  	<h1 class="poppins-font my-text-hr-color" style="color:white; text-align: left; font-size: 6em;"> 
-				  		<b>Hi, I'm Calvin</b> 
-				  	</h1>
-
-				  	<h4 class="montserrat-font my-text-hr-color" style="color:white;text-align: left; font-size: 3em;"> 
-				  			Software Engineer
-				  	</h4>
-
-				  	<h2 class="poppins-font my-text-hr-color" style="color:white; text-align: left; font-size: 4em;"> 
-				  			It's nice to meet you! 
-				  	</h2>
-				  	
-				  </div>
-				</div>
-			</div>
-		</header>
-	<!-- Scroll Area 1 END -->
-	</div>
-
-
-
-
-<!-- ABOUT ME -->
-<!-- Scroll Area 2: About Me-->
-	<div class="scroll-area">
-
-	<div id="about"></div>
-	<div class="container full-screen-height" style="overflow: auto; display:flex;align-items:center">
-		
-		<div class="row">
-		
-		  <div class="col-sm-12">
-
-		  	<!-- About me text -->
-		  	<hr class="line-z-index my-text-hr-color" style="color:white">
-		  	
-		  	<h1 style="color:white; text-align: center; font-size: 3.5em;" class="poppins-font color-white my-text-hr-color">
-		  	 About Me 
-		  	</h1>
-
-		  	<hr class="line-z-index my-text-hr-color" style="color:white"> 
-		  	
-		  	<p style="color:white; font-size: 1.4em;" class="poppins-font color-white my-text-hr-color"> 
- 
-
-							Hi there! I'm a software engineer with a passion for everything tech! I graduated from the <b>University of California, Berkeley</b>, with a <b>B.A. in Computer Science</b>, and I’ve spent my time there diving into everything from cryptography and operating systems to clean, user-friendly design.
-							<br><br>
-
-							I’ve worked with many tools and languages—including Python, Java, C, C++, HTML/CSS, and Git. And recently I’ve been working as a Test Engineer, helping to shape and validate the hardware and software powering the AI-driven data centers of tomorrow.
-							<br><br>
-
-							Beyond the technical side, I care a lot about <b>clear communication</b>, being a <b>team player</b>, and <b>critical thinking</b>. I approach every challenge with curiosity, adaptability, and a willingness to grow.
-							<br><br>
-
-							And outside of the tech world, I'm a <b>creative artist, avid gym enjoyer, and pop-culture collectibles hunter</b>!
-							<br><br>
-
-							If you'd like to get in contact with me, please feel free to email me at
-							<a style="text-decoration:none;" href="mailto:pqcalvin@gmail.com" target="_blank"> 
-						  	<span class="roberto-font my-text-hr-color" style="color:white;">
-						  		<b><em>pqcalvin@gmail.com</em></b>
-						  	</span>
-						  </a>
-
-							or connect with me on 
-
-							<a style="text-decoration:none;" href="https://www.linkedin.com/in/calvin-pham-profile/" class="link-click" target="_blank"  download> 
-								<span class="roberto-font my-text-hr-color" style="color:white;"> 
-									<b><em>LinkedIn</em></b> 
-								</span>
-							</a>. 
-
-		  	</p>
-		  </div>
-		</div>
-	</div>
-<!-- Scroll Area 2 END  -->
+</nav>
+<div class="site-header__actions">
+<button aria-label="Switch to light mode" class="theme-toggle" id="theme-toggle" title="Switch to light mode" type="button">
+<span class="theme-icon theme-icon--moon"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M20.5 14A8.3 8.3 0 0 1 10 3.5 8.5 8.5 0 1 0 20.5 14Z"></path></svg></span>
+<span class="theme-icon theme-icon--sun"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg></span>
+</button>
+<button aria-controls="site-navigation" aria-expanded="false" aria-label="Open navigation menu" class="menu-toggle" id="menu-toggle" type="button">
+<span class="menu-icon menu-icon--open"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></span>
+<span class="menu-icon menu-icon--close"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"></path></svg></span>
+</button>
 </div>
-
-
-
-<!-- Scroll Area 3: Projects-->
-<div class="scroll-area2">
-<!-- THIS IS FOR MY PROJECTS -->
-<div id="projects"></div>
-
-<br><br><br><br>
-
-	<div class="container">
-		<hr class="line-z-index my-text-hr-color" style="color:white">
-		
-		<div class="row">
-		  <div class="col-sm-12">
-		  	<h1 style="color:white; text-align: center; font-size: 3.5em;" class="poppins-font color-white my-text-hr-color"> Projects </h1>
-		  </div>
-		</div>
-		
-		<hr class="line-z-index my-text-hr-color" style="color:white">
-	</div>
-<br>
-
-<!-- FLUID PARTICLE SIMULATOR -->
-	<div class="container">
-		<div class="row">
-		  
-		  <div class="col-sm-4">
-		  	<br><br><br>
-		  	<img src="assets/wave.gif" class="img-resizer-2" alt="Water Simulation"/>
-		  </div>
-		  
-		  <div class="col-sm-8">
-		  	<h4 style="color:white; text-align: center; font-size: 2em;" class="roberto-font my-text-hr-color"> Fluid Dynamics Particle Simulator </h4>
-		  	<br>
-
-			<ul style="text-align: left; color:white" class="poppins-font my-text-hr-color">
-
-				<li style="list-style-type: disc; font-size: 1.05em;"> 
-					I've created a <b>sophisticated CGI water simulator</b> using <b>C and Blender</b>. The water physics, based on extensive research in fluid dynamics, <b>accurately replicate real-life water movement</b>.
-				</li>
-
-				<br>
-
-				<li style="list-style-type: disc; font-size: 1.05em;"> 
-
-					I also developed a <b>graphics rendering algorithm</b> that transforms particle calculations into <b>captivating 3D meshes for stunning animations</b>.
-				</li>
-
-
-				<br>
-
-				<li style="list-style-type: disc; font-size: 1.05em;"> 
-
-					Through techniques like <b>multi-threading and hashing</b>, we achieved efficient computation for interactions among thousands of particles and <b>optimized the graphics rendering process</b> for swift visual output generation.
-
-				</li>
-
-			</ul>
-
-		  </div>
-		</div>
-		
-		<br>
-		
-		<hr class="line-z-index my-text-hr-color" style="color:white">
-	</div>
-
-		<br> 
-
-<!-- CRYPTO FILE SYSTEM -->
-	<div class="container">
-		<div class="row">
-		  
-		  <div class="col-sm-4">
-		  	<br><br>
-
-		  	<img src="assets/crypto.png" class="img-resizer-2" alt="Crypto File"/>	
-		  </div>
-
-		  <div class="col-sm-8">
-			  <h4 style="color:white; text-align: center; font-size: 2em;" class="roberto-font my-text-hr-color"> Cryptographic File Sharing System </h4>
-			  
-			  <br>
-
-			<ul style="color:white; text-align: left;" class="poppins-font my-text-hr-color">
-
-				<li style="list-style-type: disc; font-size: 1.05em;"> 
-					I've developed a <b>secure multi-user file sharing and storage system</b> using various <b>cryptographic techniques</b>, including <b>public and private key encryption, HMAC, AES-CTR block chaining, SHA-512 hashing, and symmetric encryption.</b>
-				</li>
-
-				<br><br>
-
-				<li style="list-style-type: disc; font-size: 1.05em;"> 
-				My system <b>enables users to add, append, share, and revoke files securely</b>. I prioritize user <b>data security</b>, employing a <b>transient data design philosophy</b> to ensure confidentiality, integrity, and authenticity, safeguarding our users' information.
-				</li>
-
-
-
-
-			</ul>
-
-		  </div>
-		</div>
-
-		<br>
-
-		<hr class="line-z-index my-text-hr-color" style="color:white">
-	</div>
-
-<br>
-
-<!-- PINTOS OS -->
-	<div class="container">
-		<div class="row">
-		  
-		  <div class="col-sm-4">
-		  	<img src="assets/pintos.png" class="img-resizer" alt="Pintos OS"/>	
-		  </div>
-		  
-		  <div class="col-sm-8">
-		  	<h4 style="color: white; text-align: center; font-size: 2em;" class="roberto-font my-text-hr-color"> Pintos Operating System </h4>
-			  
-			  <br>
-
-			<ul style="color:white; text-align: left;" class="poppins-font my-text-hr-color">
-
-				<li style="list-style-type: disc; font-size: 1.05em;"> 
-					I had the chance to improve a barebones operating system by <b>implementing key enhancements</b>. These included <b>user program handling, system calls, and managing thread concurrency</b>.
-				</li>
-
-				<br><br>
-
-				<li style="list-style-type: disc; font-size: 1.05em;"> 
-					Within this project, I introduced two essential features. First, I developed a <b>recursive priority donation algorithm</b> that enabled multiple threads to efficiently use <b>locks, semaphores, and condition variables for atomic operations</b>, enhancing <b>efficiency and overall system performance</b>.
-				</li>
-
-				<br><br>
-
-				<li style="list-style-type: disc; font-size: 1.05em;"> 
-					Additionally, I designed a <b>least recently used buffer cache</b> specifically for the i-node based file system. This <b>optimization significantly improved the system's runtime speed</b>, showcasing the impact of thoughtful design in operating systems.
-				</li>
-
-
-			</ul>
-
-		  </div>
-		</div>
-		
-		<br>
-		
-		<hr class="line-z-index my-text-hr-color" style="color:white">
-	</div>
-
-		<br>
-
-<!-- GITLET -->
-	<div class="container">
-		<div class="row">
-
-		  <div class="col-sm-4">
-		  	<img src="assets/gitlet.png" class="img-resizer" alt="Gitlet"/>	
-		  </div>
-
-		  <div class="col-sm-8">
-		  	<h4 style="color:white; text-align: center; font-size: 2em;" class="roberto-font my-text-hr-color"> Gitlet </h4>
-			  
-			  <br>
-
-			<ul style="color:white; text-align: left;" class="poppins-font my-text-hr-color">
-
-				<li style="list-style-type: disc; font-size: 1.05em;"> 
-					I've developed a <b>local file version control system inspired by Git</b>, offering features like <b>branching, committing, checking out, logging, resetting, and merging</b>. 
-				</li>
-
-
-				<br><br>
-
-				<li style="list-style-type: disc; font-size: 1.05em;"> 
-					To handle the complexity of these features, I used <b>object-oriented programming</b> techniques and implemented 
-					<b>serialization and deserialization</b>. Managing multiple file and folder versions was both challenging and rewarding.
-				</li>
-
-				<br><br>
-
-				<li style="list-style-type: disc; font-size: 1.05em;"> 
-					This project marked a <b>turning point</b> in my coding journey, emphasizing the value of <b>good coding practices, design skills, and meticulous planning</b>.
-				</li>
-
-			</ul>
-
-
-		  </div>
-		</div>
-		
-		<br>
-		
-		<hr class="line-z-index my-text-hr-color" style="color:white">
-	</div>
-
-<!-- SEE MORE BUTTON -->
-<!-- 	<div class="container scroll-area2">
-		<div class="row">
-			
-			<div class="col-sm-12"> </div>
-			  	<i class="fa fa-caret-down fa-5x my-text-hr-color link-click" style="color:black; text-align: center;" id="more-div" aria-hidden="true"></i>
-		</div>
-	</div> -->
-
-
-
-
-<!-- SEE MORE PROJECTS CATEGORY -->
-<!-- <div id="extra-projects"> -->
-
-<!-- DATABASE -->
-	<div class="container">
-		
-		<br>
-		
-		<div class="row">
-		  <div class="col-sm-4">
-		  	<img src="assets/database.png" class="img-resizer-2" alt="Database"/>	
-		  </div>
-		  
-		  <div class="col-sm-8">
-		  	<h4 style="color : white; text-align: center; font-size: 2em;" class="roberto-font my-text-hr-color"> RookieDB </h4>
-		  		
-		  		<br>
-		  		
-			<ul style="color:white; text-align: left;" class="poppins-font my-text-hr-color">
-
-				<li style="list-style-type: disc; font-size: 1.05em;"> 
-					I <b>enhanced a barebones database</b> with <b>diverse and sophisticated features</b>, including B+ tree indices for rapid storage access, optimized join algorithms, query optimizations, a multi-granularity locking system for concurrent transactions, and database recovery through logging.
-				</li>
-
-				<br><br>
-
-				<li style="list-style-type: disc; font-size: 1.05em;"> 
-				One of the project's most challenging aspects was <b>implementing a robust multi-granularity locking system</b>. To 
+</div>
+</header>
+<main id="main">
+<section aria-labelledby="hero-title" class="hero section">
+<div class="hero__inner layout-container">
+<div class="hero__portrait-wrap">
+<img alt="Calvin Pham" class="hero__portrait" fetchpriority="high" height="1523" src="assets/mypic.jpg" width="1493"/>
+<span aria-hidden="true" class="hero__portrait-accent"></span></div>
+<div class="hero__copy">
+<p class="eyebrow"><span aria-hidden="true" class="eyebrow__dot"></span>HELLO, I'M CALVIN</p>
+<h1 id="hero-title">Hi, I'm <span class="text-accent">Calvin.</span></h1>
+<p class="hero__role">Software Engineer</p>
+<p class="hero__greeting">I build software and help make complex computing systems reliable—from systems programming and automation to testing hardware and software changes before production.</p>
+<div class="hero__actions">
+<a class="button button--primary" href="#projects">Explore my projects <svg aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"></path></svg></a>
+<a class="button button--secondary" href="#contact">Contact me <svg aria-hidden="true" viewbox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="about-title" class="about section" id="about">
+<div class="layout-container about__inner">
+<div class="section-heading">
+<p class="eyebrow"><span aria-hidden="true" class="eyebrow__dot"></span>01 / ABOUT</p>
+<h2 id="about-title">A little <span class="text-accent">about me.</span></h2>
+<p class="section-heading__intro">A software engineering foundation, with hands-on systems experience.</p>
+</div>
+<div class="about__layout">
+<aside aria-label="Quick background" class="about__sidebar">
+<p class="about__sidebar-tag">EDUCATION</p>
+<h3>UC Berkeley</h3>
+<p>B.A. in Computer Science</p>
+<span class="about__sidebar-label">TOOLS &amp; LANGUAGES</span>
+<ul class="skills-list"><li>Python</li><li>Java</li><li>C / C++</li><li>HTML / CSS</li><li>Git</li></ul>
+</aside><div class="about__copy-card"><div class="about__body">
+<p>Hi there! I'm a <b>software engineer</b> and a graduate of the <b>University of California, Berkeley</b> with a <b>B.A. in Computer Science</b>. I enjoy turning complex problems into working software, whether that's systems programming, security, algorithms, or a thoughtful, easy-to-use application.</p>
+<p>My software engineering background includes <b>operating systems, cryptography, databases, and web development</b>. I've worked with <b>Python, Java, C, C++, HTML/CSS, and Git</b>, and I'm especially interested in reliable software, backend systems, and developer tools.</p>
+<p>Professionally, I've worked on <b>high-volume production testing</b> and the <b>validation of hardware and software changes before release</b> for next-generation computing systems. I use debugging, automation, and systematic testing to find issues early and help complex systems run dependably.</p>
+<p>I value <b>clear communication, collaboration, and critical thinking</b>, and I approach new challenges with curiosity and adaptability. Outside of engineering, I enjoy fitness, creative projects, and good design.</p>
+</div></div></div></div>
+</section>
+<section aria-labelledby="experience-title" class="experience section" id="experience">
+<div class="layout-container">
+<div class="section-heading">
+<p class="eyebrow"><span aria-hidden="true" class="eyebrow__dot"></span>02 / EXPERIENCE</p>
+<h2 id="experience-title">What I <span class="text-accent">work on.</span></h2>
+<p class="section-heading__intro">Production-scale testing, release validation, and the automation behind reliable systems.</p>
+</div>
+<div class="experience__grid">
+<article class="experience__card">
+<div class="experience__card-top"><span class="experience__marker">CURRENT FOCUS</span><span class="experience__stage">Before production release</span></div>
+<h3>Hardware &amp; Software Validation</h3>
+<p class="experience__role">Next-generation computing systems</p>
+<p class="experience__description">I validate proposed hardware and software changes before they are introduced into high-volume production. My work includes troubleshooting, automation, and evaluating reliability and readiness across interconnected systems.</p>
+</article>
+<article class="experience__card">
+<div class="experience__card-top"><span class="experience__marker">EARLIER FOCUS</span><span class="experience__stage">At production scale</span></div>
+<h3>Production Systems &amp; Automation</h3>
+<p class="experience__role">System testing and diagnostics</p>
+<p class="experience__description">I supported large-scale system testing, investigated failures, and built scripting and Linux-based workflows to streamline diagnostics and validation in a production environment.</p>
+</article>
+</div>
+<aside class="experience__education" aria-label="Computer science education">
+  <div class="experience__education-heading">
+    <span class="experience__marker">SOFTWARE ENGINEERING FOUNDATION</span>
+    <h3>Computer Science, <span class="text-accent">UC Berkeley.</span></h3>
+    <p>B.A. in Computer Science</p>
+  </div>
+  <div class="experience__education-detail">
+    <p>My programming foundation spans <strong>systems programming, algorithms, databases, security, and software design</strong>. I apply those fundamentals through hands-on projects and engineering work.</p>
+    <a href="#projects" class="experience__education-link">Explore software projects <span aria-hidden="true">→</span></a>
+  </div>
+</aside>
+</div>
+</section>
+<section aria-labelledby="projects-title" class="projects section" id="projects">
+<div class="layout-container">
+<div class="section-heading">
+<p class="eyebrow"><span aria-hidden="true" class="eyebrow__dot"></span>03 / PROJECTS</p>
+<h2 id="projects-title">My <span class="text-accent">projects.</span></h2>
+<p class="section-heading__intro">Seven software projects in systems, security, databases, graphics, optimization, and full-stack development. Complete details below.</p>
+</div>
+<div class="projects__list" id="projects-list">
+<article aria-labelledby="project-1-title" class="project" data-index="01">
+<div class="project__media">
+<img alt="Water Simulation" class="project__image" decoding="async" height="337" loading="lazy" src="assets/wave.gif" width="600"/>
+</div>
+<div class="project__content"><div class="project__number">PROJECT / 01</div><h3 class="project__title" id="project-1-title">Fluid Dynamics Particle Simulator</h3><p class="project__summary">A physics-based fluid simulation and graphics renderer for realistic water animation.</p><ul class="project__tags"><li>C</li><li>Blender</li><li>Graphics</li></ul><div class="project__full-details"><h4 class="project__details-heading">What I built</h4><ul class="project__details">
+<li>I've created a <b>sophisticated CGI water simulator</b> using <b>C and Blender</b>. The water physics, based on extensive research in fluid dynamics, <b>accurately replicate real-life water movement</b>.</li>
+<li>I also developed a <b>graphics rendering algorithm</b> that transforms particle calculations into <b>captivating 3D meshes for stunning animations</b>.</li>
+<li>Through techniques like <b>multi-threading and hashing</b>, we achieved efficient computation for interactions among thousands of particles and <b>optimized the graphics rendering process</b> for swift visual output generation.</li>
+</ul></div></div>
+</article>
+<article aria-labelledby="project-2-title" class="project" data-index="02">
+<div class="project__media">
+<img alt="Crypto File" class="project__image" decoding="async" height="529" loading="lazy" src="assets/crypto.png" width="997"/>
+</div>
+<div class="project__content"><div class="project__number">PROJECT / 02</div><h3 class="project__title" id="project-2-title">Cryptographic File Sharing System</h3><p class="project__summary">Secure, multi-user file sharing built with modern cryptographic primitives.</p><ul class="project__tags"><li>Cryptography</li><li>Security</li></ul><div class="project__full-details"><h4 class="project__details-heading">What I built</h4><ul class="project__details">
+<li>I've developed a <b>secure multi-user file sharing and storage system</b> using various <b>cryptographic techniques</b>, including <b>public and private key encryption, HMAC, AES-CTR block chaining, SHA-512 hashing, and symmetric encryption.</b></li>
+<li>My system <b>enables users to add, append, share, and revoke files securely</b>. I prioritize user <b>data security</b>, employing a <b>transient data design philosophy</b> to ensure confidentiality, integrity, and authenticity, safeguarding our users' information.</li>
+</ul></div></div>
+</article>
+<article aria-labelledby="project-3-title" class="project" data-index="03">
+<div class="project__media">
+<img alt="Pintos OS" class="project__image project__image--circle" decoding="async" height="1500" loading="lazy" src="assets/pintos.png" width="1500"/>
+</div>
+<div class="project__content"><div class="project__number">PROJECT / 03</div><h3 class="project__title" id="project-3-title">Pintos Operating System</h3><p class="project__summary">Operating system enhancements across threading, file systems, and concurrency.</p><ul class="project__tags"><li>Operating Systems</li><li>C</li></ul><div class="project__full-details"><h4 class="project__details-heading">What I built</h4><ul class="project__details">
+<li>I had the chance to improve a barebones operating system by <b>implementing key enhancements</b>. These included <b>user program handling, system calls, and managing thread concurrency</b>.</li>
+<li>Within this project, I introduced two essential features. First, I developed a <b>recursive priority donation algorithm</b> that enabled multiple threads to efficiently use <b>locks, semaphores, and condition variables for atomic operations</b>, enhancing <b>efficiency and overall system performance</b>.</li>
+<li>Additionally, I designed a <b>least recently used buffer cache</b> specifically for the i-node based file system. This <b>optimization significantly improved the system's runtime speed</b>, showcasing the impact of thoughtful design in operating systems.</li>
+</ul></div></div>
+</article>
+<article aria-labelledby="project-4-title" class="project" data-index="04">
+<div class="project__media">
+<img alt="Gitlet" class="project__image project__image--circle" decoding="async" height="460" loading="lazy" src="assets/gitlet.png" width="460"/>
+</div>
+<div class="project__content"><div class="project__number">PROJECT / 04</div><h3 class="project__title" id="project-4-title">Gitlet</h3><p class="project__summary">A local version control system featuring commits, branching, and merging.</p><ul class="project__tags"><li>Java</li><li>Version Control</li></ul><div class="project__full-details"><h4 class="project__details-heading">What I built</h4><ul class="project__details">
+<li>I've developed a <b>local file version control system inspired by Git</b>, offering features like <b>branching, committing, checking out, logging, resetting, and merging</b>.</li>
+<li>To handle the complexity of these features, I used <b>object-oriented programming</b> techniques and implemented 
+					<b>serialization and deserialization</b>. Managing multiple file and folder versions was both challenging and rewarding.</li>
+<li>This project marked a <b>turning point</b> in my coding journey, emphasizing the value of <b>good coding practices, design skills, and meticulous planning</b>.</li>
+</ul></div></div>
+</article>
+<article aria-labelledby="project-5-title" class="project" data-index="05">
+<div class="project__media">
+<img alt="Database" class="project__image" decoding="async" height="512" loading="lazy" src="assets/database.png" width="512"/>
+</div>
+<div class="project__content"><div class="project__number">PROJECT / 05</div><h3 class="project__title" id="project-5-title">RookieDB</h3><p class="project__summary">A database engine with indexing, transaction locking, and query optimization.</p><ul class="project__tags"><li>Databases</li><li>Systems</li></ul><div class="project__full-details"><h4 class="project__details-heading">What I built</h4><ul class="project__details">
+<li>I <b>enhanced a barebones database</b> with <b>diverse and sophisticated features</b>, including B+ tree indices for rapid storage access, optimized join algorithms, query optimizations, a multi-granularity locking system for concurrent transactions, and database recovery through logging.</li>
+<li>One of the project's most challenging aspects was <b>implementing a robust multi-granularity locking system</b>. To 
 				<b>ensure database integrity and consistency</b>, I <b>employed various lock types for atomic actions</b> and a 
-				<b>sophisticated wait queue mechanism for concurrent resource access</b>.
-				</li>
-
-			</ul>
-
-		  </div>
-		</div>
-		
-		<br>
-		
-		<hr class="line-z-index my-text-hr-color" style="color:white">
-	</div>
-		
-		<br>
-
-<!-- GO MOTIVATION -->
-	<div class="container">
-		<div class="row">
-
-		  <div class="col-sm-4">
-		  		<img src="assets/go-motivation.png" class="img-resizer-2" alt="Pintos OS"/>	
-		  </div>
-
-		  <div class="col-sm-8">
-		  		<h4 style="color:white; text-align: center; font-size: 2em;" class="roberto-font my-text-hr-color"> Go Motivation </h4>
-		  			
-		  			<br>
-
-			<ul style="color:white; text-align: left;" class="poppins-font my-text-hr-color">
-
-				<li style="list-style-type: disc; font-size: 1.05em;"> 
-				My team and I created a <b>full-stack fitness web app</b> with <b>motivating features for tracking long-term goals</b>. It includes a <b>user-friendly calendar and achievement system</b>. We integrated calendar and data storage <b>APIs</b> for efficiency.
-				</li>
-
-				<br><br>
-
-				<li style="list-style-type: disc; font-size: 1.05em;"> 
-				We took a <b>comprehensive approach</b> to <b>user interface design</b>, using A/B testing, persona development, and wireframing techniques to build the app iteratively, <b>focusing on a specific user group</b>.
-				</li>
-
-
-			</ul>
-
-		  </div>
-		</div>
-		
-		<br>
-		
-		<hr class="line-z-index my-text-hr-color" style="color:white">
-	</div>
-
-<br>
-
-<!-- ILP -->
-	<div class="container">
-		<div class="row">
-		  <div class="col-sm-4">
-		  	<img src="assets/ilp.png" class="img-resizer-2 color-white" alt="Database"/>	
-		  </div>
-		  
-		  <div class="col-sm-8">
-		  	<h4 style="color:white; text-align: center; font-size: 2em;" class="roberto-font my-text-hr-color"> Integer Linear Program Room Optimizer </h4>
-		  	
-		  	<br>
-
-			<ul style="color:white; text-align: left;" class="poppins-font my-text-hr-color">
-
-				<li style="list-style-type: disc; font-size: 1.05em;"> 
-					My team and I took on a challenging project involving an <b>NP-complete search problem</b>. Our task was to identify the best combinations of people and rooms while meeting specific criteria. Essentially, we aimed to <b>generate the ideal groupings of vertices that maximized the sum of edge values without exceeding a set upper threshold</b>.
-				</li>
-
-				<br><br>
-
-				<li style="list-style-type: disc; font-size: 1.05em;"> 
-					To address this complex problem, we applied <b>integer linear programming</b> to create an algorithm that pinpointed the optimal vertex groupings among hundreds of sets, each containing 100 vertices. Our innovative approach paid off as we secured a commendable <b>10th place out of 243 competing groups in a contest</b> that assessed solvers' efficiency in processing a maximum number of inputs within strict time limits.
-				</li>
-
-					
-
-			</ul>
-
-		  </div>
-		</div>
-		
-		<br>
-		
-		<!-- <hr class="line-z-index my-text-hr-color" style="color:black"> -->
-	
-	<!-- SEE MORE END -->
-	</div>
-
-
-<!-- SEE LESS BUTTON -->
-	<div class="container scroll-area2">
-		<div class="row">			  
-			  <div class="col-sm-12 link-click"> </div>
-			  	<i class="fa fa-caret-up fa-5x my-text-hr-color link-click" style="color:black; text-align: center;" id="less-div" aria-hidden="true"></i>
-	  </div>
-	</div>
-
-<!-- END of MORE PROJECTS -->
-
-
-<!-- CONTACT ME. MAKE THIS ALL BLACK, LIKE THE END OF EACH PAGE HAS A DARKER COLOR AND CONTACT INFO -->
-	<div class="container-fluid my-contact-color" id="contact" style="background-color : #202020;">
-		<div class="row">
-		  <div class="col-sm-12">
-			
-			<br><br>
-		  	
-		  	<h1 style="text-align: center; color: white" class="roberto-font"> Contact Me </h4>
-		  </div>
-		</div>
-		
-		<br>
-
-		<div class="row">
-		  <div class="col-sm-12">
-			
-			<br>
-		  
-		  	<ul style="text-align: center;">
-
-    			<li style="display:inline;" class="link-click">   				
-						<a style="text-decoration:none;" href="mailto:pqcalvin@gmail.com" target="_blank"> 
-							<i class="fa fa-envelope fa-2x icon-circle" aria-hidden="true" style="color: white;"></i>	
-							&nbsp;&nbsp; 
-							<span class="roberto-font" style="color: white;">pqcalvin@gmail.com</span></a>
-    			</li>
-
-
-    			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    			&nbsp;&nbsp;&nbsp;
-
-
-    			<li style="display:inline;" class="link-click">
-						<a style="text-decoration:none;" href="https://github.com/calapps" target="_blank">
-			  			<i class="fa fa-github fa-2x icon-circle" aria-hidden="true" style="color: white;"></i>
-			  			&nbsp;&nbsp; 
-			  			<span class="roberto-font" style="color: white;">Github</span>
-			  		</a>
-			  	</li>
-
-
-			  	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    			&nbsp;&nbsp;&nbsp;
-
-
-    			<li style="display:inline;" class="link-click">
-    					<a style="text-decoration:none;" href="https://www.linkedin.com/in/calvin-pham-profile/" target="_blank">
-			  				<i class="fa fa-linkedin fa-2x icon-circle" aria-hidden="true" style="color: white;"></i>
-			  			&nbsp;&nbsp; 
-			  			<span class="roberto-font" style="color: white;">LinkedIn </span>
-			  		</a>
-			  	</li>
-
-
-			  	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    			&nbsp;&nbsp;&nbsp;
-
-
-    			<li style="display:inline;" class="link-click">
-    				<a style="text-decoration:none;" href="assets/Calvin_Pham_Resume.pdf" target="_blank" download>
-  						<i class="fa fa-file-pdf-o fa-2x icon-circle" aria-hidden="true" style="color: white;"></i>
-							&nbsp;&nbsp; <span class="roberto-font" style="color: white;"> Resume </span> 
-						</a>
-					</li>
-
-
-  			</ul>
-		  </div>
-		</div>
-
-		<br><br><br>
-
-	</div>
+				<b>sophisticated wait queue mechanism for concurrent resource access</b>.</li>
+</ul></div></div>
+</article>
+<article aria-labelledby="project-6-title" class="project" data-index="06">
+<div class="project__media">
+<img alt="Go Motivation fitness app screenshot" class="project__image" decoding="async" height="705" loading="lazy" src="assets/go-motivation.png" width="774"/>
 </div>
-
-
-<!-- END of scroll area 3 -->	
-<!-- </div> -->
-<!-- scroll container div end -->
+<div class="project__content"><div class="project__number">PROJECT / 06</div><h3 class="project__title" id="project-6-title">Go Motivation</h3><p class="project__summary">A full-stack fitness app designed to help users track long-term goals.</p><ul class="project__tags"><li>Full-Stack</li><li>UI / UX</li></ul><div class="project__full-details"><h4 class="project__details-heading">What I built</h4><ul class="project__details">
+<li>My team and I created a <b>full-stack fitness web app</b> with <b>motivating features for tracking long-term goals</b>. It includes a <b>user-friendly calendar and achievement system</b>. We integrated calendar and data storage <b>APIs</b> for efficiency.</li>
+<li>We took a <b>comprehensive approach</b> to <b>user interface design</b>, using A/B testing, persona development, and wireframing techniques to build the app iteratively, <b>focusing on a specific user group</b>.</li>
+</ul></div></div>
+</article>
+<article aria-labelledby="project-7-title" class="project" data-index="07">
+<div class="project__media">
+<img alt="Integer linear programming room optimizer illustration" class="project__image" decoding="async" height="824" loading="lazy" src="assets/ilp.png" width="800"/>
 </div>
-
+<div class="project__content"><div class="project__number">PROJECT / 07</div><h3 class="project__title" id="project-7-title">Integer Linear Program Room Optimizer</h3><p class="project__summary">An optimization solver for complex grouping and assignment problems.</p><ul class="project__tags"><li>Optimization</li><li>Algorithms</li></ul><div class="project__full-details"><h4 class="project__details-heading">What I built</h4><ul class="project__details">
+<li>My team and I took on a challenging project involving an <b>NP-complete search problem</b>. Our task was to identify the best combinations of people and rooms while meeting specific criteria. Essentially, we aimed to <b>generate the ideal groupings of vertices that maximized the sum of edge values without exceeding a set upper threshold</b>.</li>
+<li>To address this complex problem, we applied <b>integer linear programming</b> to create an algorithm that pinpointed the optimal vertex groupings among hundreds of sets, each containing 100 vertices. Our innovative approach paid off as we secured a commendable <b>10th place out of 243 competing groups in a contest</b> that assessed solvers' efficiency in processing a maximum number of inputs within strict time limits.</li>
+</ul></div></div>
+</article>
+</div>
+</div>
+</section>
+</main>
+<footer aria-labelledby="contact-title" class="contact" id="contact">
+<div class="layout-container contact__inner">
+<div class="contact__lead">
+<div class="contact__lead-heading">
+<p class="contact__eyebrow"><span aria-hidden="true" class="contact__eyebrow-dot"></span> CONTACT / SAY HELLO</p>
+<h2 id="contact-title">Let's connect<span class="contact__accent">.</span></h2>
+</div>
+<p class="contact__intro">Have a project, question, or opportunity in mind? Get in touch.</p>
+</div>
+<a aria-label="Email Calvin at pqcalvin@gmail.com" class="contact__email-card" href="mailto:pqcalvin@gmail.com">
+<span class="contact__email-content">
+<span class="contact__overline">EMAIL ME</span>
+<strong class="contact__email-address">pqcalvin@gmail.com</strong>
+</span>
+<span aria-hidden="true" class="contact__email-arrow">
+<svg viewbox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"></path></svg>
+</span>
+</a>
+<div class="contact__elsewhere">
+<h3 class="contact__elsewhere-title">Find me elsewhere</h3>
+<ul class="contact__links">
+<li>
+<a aria-label="Visit Calvin's GitHub profile (opens in a new tab)" href="https://github.com/calapps" rel="noopener noreferrer" target="_blank">
+<span aria-hidden="true" class="contact__link-icon"><svg viewbox="0 0 24 24"><path d="M9 19c-4 1-4-2-6-2m12 4v-3.9a3.5 3.5 0 0 0-1-2.7c3.5-.4 5-1.8 5-5.1 0-1-.4-2-1.1-2.8.2-.8.1-1.8-.3-2.5 0 0-1.4-.1-3 1.6a10 10 0 0 0-5.2 0C7.8 4 6.4 4 6.4 4c-.4.7-.5 1.7-.3 2.5A4.3 4.3 0 0 0 5 9.3c0 3.3 1.5 4.7 5 5.1a3.5 3.5 0 0 0-1 2.7V21"></path></svg></span>
+<span class="contact__link-copy"><strong>GitHub</strong><small>Explore my code &amp; projects</small></span>
+<svg aria-hidden="true" class="contact__link-arrow" viewbox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"></path></svg>
+</a>
+</li>
+<li>
+<a aria-label="View Calvin's LinkedIn profile (opens in a new tab)" href="https://www.linkedin.com/in/calvin-pham-profile/" rel="noopener noreferrer" target="_blank">
+<span aria-hidden="true" class="contact__link-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 10v7M8 7v.1M12 17v-7h3v1.5c.7-1.1 1.3-1.5 2.5-1.5 1.8 0 2.5 1.1 2.5 3V17"/></svg></span>
+<span class="contact__link-copy"><strong>LinkedIn</strong><small>Professional profile</small></span>
+<svg aria-hidden="true" class="contact__link-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg>
+</a>
+</li>
+<li>
+<a aria-label="View Calvin's résumé PDF (opens in a new tab)" href="assets/Calvin_Pham_Resume.pdf" rel="noopener noreferrer" target="_blank">
+<span aria-hidden="true" class="contact__link-icon"><svg viewBox="0 0 24 24"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M13 2v7h7M8 13h8M8 17h8"/></svg></span>
+<span class="contact__link-copy"><strong>Résumé</strong><small>View PDF</small></span>
+<svg aria-hidden="true" class="contact__link-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg>
+</a>
+</li>
+</ul>
+</div>
+<div class="contact__bottom">
+<span>© <span id="copyright-year">2026</span> Calvin Pham</span>
+<a class="contact__back-to-top" href="#home">Back to top <svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 19V5m-6 6 6-6 6 6"></path></svg></a>
+</div>
+</div>
+</footer>
 </body>
-
-
-
-
-<!-- JAVASCRIPT -->
-<script>
-
-function init() {
-    //$(".background-header-bar-color").css("background-color", "#202020");
-
-}
-
-
-// See more caret button
-// $(document).ready(function(){
-//   $("#more-div").click(function(){
-//     $("#extra-projects").slideDown("slow");
-//     $("#less-div").slideDown("slow");
-//     $("#more-div").hide();
-//   });
-// });
-
-// See less caret button
-// $(document).ready(function(){
-//   $("#less-div").click(function(){
-//     $("#extra-projects").slideUp("slow");
-//     $("#more-div").slideDown("slow");
-//     $("#less-div").hide();
-//   });
-// });
-
-// Sun icon => Dark Mode
-$(document).ready(function(){
-  $("#sun-button").click(function(){
-    $(".my-text-hr-color").css("color", "white");
-    $(".background-general-color").css("background-color", "#181818");
-    $(".background-header-bar-color").css("background-color", "#202020");
-    $(".my-contact-color").css("background-color", "#202020");
-    $(".download-resume").css("border-color", "orange");
-    $(".download-resume").css("background-color", "black");
-
-    $(".my-resume-text-color").css("color", "orangered");
-
-    $("#sun-button").hide();
-    $("#moon-button").show();
-  });
-});
-
-// Moon icon => Light Mode
-$(document).ready(function(){
-  $("#moon-button").click(function(){
-    $(".my-text-hr-color").css("color", "black");
-    $(".background-general-color").css("background-color", "#f5f5f5");
-    $(".background-header-bar-color").css("background-color", "white");
-    $(".my-contact-color").css("background-color", "#202020");
-    $(".download-resume").css("border-color", "#89CFF0");
-    $(".download-resume").css("background-color", "whitesmoke");
-
-    $(".my-resume-text-color").css("color", "blue");
-
-
-    $("#moon-button").hide();
-    $("#sun-button").show();
-  });
-});
-</script>
-
 </html>
