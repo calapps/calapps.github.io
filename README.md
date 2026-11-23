@@ -1,21 +1,26 @@
-# Calvin Pham — Portfolio / Links & CS Education Edition
+# Calvin Pham — Personal Portfolio
 
-This edition builds directly on the Scroll Polish website, preserving your day/night modes, smooth section navigation, scroll reveals, and all seven full software projects.
+I originally built this website from scratch over two years ago. After revisiting it, I decided it was time for a complete overhaul: a cleaner design, a more polished experience, and a codebase that's easier to maintain.
 
-## Changes
+The site still reflects the original idea—a place to share who I am and what I've built—but with a more modern look and better support for both desktop and mobile.
 
-- Restored the **Résumé** button in the desktop and mobile navigation.
-- Restored **LinkedIn** and **Résumé** cards beside GitHub in the Contact section. LinkedIn uses the URL present in your original portfolio and original PDF: `https://www.linkedin.com/in/calvin-pham-profile/`.
-- Reintroduced your original `assets/Calvin_Pham_Resume.pdf` from the source code ZIP, unchanged.
-- Added a clearly labeled **Software Engineering Foundation** / **B.A. Computer Science — UC Berkeley** panel beneath the two employer-neutral experience cards, with a smooth link to projects.
-- Updated styling to support three cards responsively and reveal the education panel as you scroll.
+## About the Site
 
-## Preview and publish
+My portfolio highlights my background in software engineering, computer science, and systems development, along with my professional experience and programming projects. It's a personal space to document my work and interests.
 
-Open `index.html` in a browser, or copy the **contents** of this `calvin-portfolio` folder to the root of your GitHub Pages repository.
+## Design & Features
 
-## Important privacy and freshness note
+- Responsive layouts for desktop, tablet, and mobile
+- Light and dark themes
+- Smooth section navigation and subtle scroll animations
+- Refined typography, spacing, and project layouts
+- Seven software projects with detailed descriptions
+- Experience, education, and contact sections
 
-Although your website text still omits employer names, the original résumé PDF **contains identifiable employers, a telephone number, and work history that appears outdated** (it still lists the former role as 'Present'). Your LinkedIn page may also display your work history. Since you requested the links back, both are restored; please review or replace the PDF before publishing if you still want your employer identity kept private. Older public Git commit history may also contain such details.
+## Built With
 
-No live site changes were made.
+HTML, CSS, and JavaScript. Hosted with GitHub Pages.
+
+## Running Locally
+
+Open `index.html` in a web browser. No installation or build tools are required.
